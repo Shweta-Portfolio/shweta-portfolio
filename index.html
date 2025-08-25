@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shweta Debjit Sarkar - Research Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            overflow-x: hidden;
+            background-color: #fafbfc;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Merriweather', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e1e8ed;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a365d;
+            font-family: 'Merriweather', serif;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: #2b6cb0;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2b6cb0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #4a5568;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #1a202c;
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+            color: #1a365d;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease 0.2s both;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.4s both;
+            color: #718096;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #2b6cb0;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease 0.6s both;
+            margin: 0 10px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(43, 108, 176, 0.2);
+        }
+
+        .btn:hover {
+            background: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(43, 108, 176, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #2b6cb0;
+            color: #2b6cb0;
+        }
+
+        .btn-outline:hover {
+            background: #2b6cb0;
+            color: white;
+        }
+
+        .scroll-arrow {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: #4a5568;
+        }
+
+        /* Sections */
+        .section {
+            padding: 100px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .section h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #1a365d;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #2b6cb0, #4299e1);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #e2e8f0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1a365d;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+            text-align: justify;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .skill-tag {
+            background: #edf2f7;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            color: #2d3748;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .skill-tag:hover {
+            border-color: #2b6cb0;
+            background: #bee3f8;
+            color: #1a365d;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: #f7fafc;
+        }
+
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .experience-item {
+            display: flex;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .experience-date {
+            min-width: 220px;
+            padding-right: 3rem;
+            text-align: right;
+        }
+
+        .experience-date h4 {
+            color: #2b6cb0;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .experience-date p {
+            color: #718096;
+            font-size: 0.95rem;
+        }
+
+        .experience-content {
+            flex: 1;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            border-left: 4px solid #2b6cb0;
+        }
+
+        .experience-content h3 {
+            color: #1a365d;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .experience-content .company {
+            color: #2b6cb0;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .experience-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-content li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .experience-content li::before {
+            content: "▸";
+            color: #2b6cb0;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-header {
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            color: #1a202c;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .project-header i {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2b6cb0;
+        }
+
+        .project-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #1a365d;
+        }
+
+        .project-header .project-date {
+            font-size: 0.95rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .project-content {
+            padding: 2.5rem;
+        }
+
+        .project-content p {
+            color: #4a5568;
+            margin-bottom: 1.8rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .project-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .tool-tag {
+            background: #bee3f8;
+            color: #1a365d;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-achievements {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-achievements li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 0.95rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .project-achievements li::before {
+            content: "✓";
+            color: #2b6cb0;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Education Section */
+        .education {
+            background: #f7fafc;
+        }
+
+        .education-item {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #2b6cb0;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .education-header h3 {
+            color: #1a365d;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .education-header .university {
+            color: #2b6cb0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .education-date {
+            color: #718096;
+            font-size: 0.95rem;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .education-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education-details li {
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+            position: relative;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .education-details li::before {
+            content: "•";
+            color: #2b6cb0;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            margin-bottom: 4rem;
+        }
+
+        .contact-header h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #1a365d;
+        }
+
+        .contact-header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2b6cb0, #4299e1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            transform: scale(1.1);
+        }
+
+        .contact-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .contact-details h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1a365d;
+            font-weight: 600;
+        }
+
+        .contact-details p {
+            color: #4a5568;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: #2b6cb0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .social-links {
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #4299e1;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0) translateX(-50%);
+            }
+
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 2rem 0;
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .hero-content p {
+                font-size: 0.95rem;
+                margin-bottom: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .about-image img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .about-text h3 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+                text-align: left;
+            }
+
+            .skills {
+                justify-content: center;
+                gap: 0.8rem;
+            }
+
+            .skill-tag {
+                font-size: 0.85rem;
+                padding: 8px 16px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project-card {
+                margin: 0 1rem;
+            }
+
+            .project-header {
+                padding: 2rem;
+            }
+
+            .project-content {
+                padding: 2rem;
+            }
+
+            .experience-item {
+                flex-direction: column;
+                margin: 0 1rem 3rem 1rem;
+            }
+
+            .experience-date {
+                text-align: left;
+                margin-bottom: 1.5rem;
+                min-width: auto;
+                padding-right: 0;
+            }
+
+            .experience-content {
+                padding: 2rem;
+            }
+
+            .education-header {
+                flex-direction: column;
+            }
+
+            .education-date {
+                text-align: left;
+                margin-top: 1rem;
+            }
+
+            .education-item {
+                padding: 2rem;
+                margin: 0 1rem 2rem 1rem;
+            }
+
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section h2 {
+                font-size: 2.2rem;
+                margin-bottom: 3rem;
+            }
+
+            .interests-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 0 10px;
+            }
+
+            .interest-card {
+                padding: 20px;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i> Shweta Sarkar
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Shweta Debjit Sarkar</h1>
+            <p class="subtitle">Data Analytics & Business Intelligence Specialist</p>
+            <p>Aspiring PhD researcher in Machine Learning & Data-Driven Decision Making</p>
+            <a href="#projects" class="btn">View My Research</a>
+            <a href="mailto:shwetasarkar.official@gmail.com" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/Shweta Photo.jpg" alt="Shweta Sarkar">
+            </div>
+            <div class="about-text">
+                <h3>Data Analytics Professional & Research Enthusiast</h3>
+                <p>I'm a passionate data analytics professional with expertise in machine learning, predictive modeling,
+                    and intelligent database systems. Currently pursuing my MSc in Business Analytics and International
+                    Business at the University of Dundee, I bring a unique blend of technical expertise and business
+                    acumen.</p>
+                <p>With hands-on experience in behavioral analytics, database management, and operational data analysis,
+                    I'm dedicated to advancing data-driven decision-making through innovative methodologies that
+                    integrate AI, database optimization, and business analytics to address complex real-world
+                    challenges.</p>
+                <p><strong>Location:</strong> Liverpool, Merseyside, United Kingdom</p>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Amplitude</span>
+                    <span class="skill-tag">Statistical Analysis</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Interest Section -->
+    <section id="interests" class="section">
+        <h2>Research Areas & Specializations</h2>
+        <div class="interests-container">
+            <!-- Left Column -->
+            <div class="interests-column">
+                <div class="interest-card" onclick="toggleDetails('analytics')">
+                    <h3>Data Analytics & Business Intelligence</h3>
+                    <div class="interest-details" id="analytics">
+                        <p><strong>Experience:</strong> Behavioural Analyst at MoovBuddy Ltd - Applied advanced
+                            quantitative methods including funnel analysis, retention cohort analysis, and RFM
+                            segmentation</p>
+                        <p><strong>Tools:</strong> Amplitude, Facebook Ads Manager, Excel, Power BI, Google Sheets</p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('ml')">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="interest-details" id="ml">
+                        <p><strong>Project:</strong> AI-Powered Flight Landing Decision System - Achieved 96.24%
+                            accuracy using RandomForestClassifier</p>
+                        <p><strong>Skills:</strong> Linear Regression, Decision Tree, Random Forest, Naive Bayes,
+                            XGBoost, KMeans clustering</p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('database')">
+                    <h3>Database Management Systems</h3>
+                    <div class="interest-details" id="database">
+                        <p><strong>Project:</strong> Comprehensive Database Management System for Autobest Emporio Ltd
+                        </p>
+                        <p><strong>Expertise:</strong> ER Modeling, Normalization, Relational Algebra, SQL, MySQL,
+                            MongoDB</p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('statistical')">
+                    <h3>Statistical Analysis & Modeling</h3>
+                    <div class="interest-details" id="statistical">
+                        <p><strong>Application:</strong> Advanced statistical methods in passenger data analysis and
+                            mathematical modeling</p>
+                        <p><strong>Tools:</strong> Python, R, NumPy, Scikit-learn, Statistical Methods</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="interests-column">
+                <div class="interest-card" onclick="toggleDetails('fintech')">
+                    <h3>FinTech & Digital Payments</h3>
+                    <div class="interest-details" id="fintech">
+                        <p><strong>Academic Focus:</strong> AI in Financial Technology, Digital Identity, Cloud
+                            Computing, Open Banking</p>
+                        <p><strong>Knowledge:</strong> Blockchain, Global Finance, Exchange Rates, Portfolio Management
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('visualization')">
+                    <h3>Data Visualization & Reporting</h3>
+                    <div class="interest-details" id="visualization">
+                        <p><strong>Experience:</strong> Created interactive dashboards to visualize user journeys,
+                            churn, and retention patterns</p>
+                        <p><strong>Tools:</strong> Power BI, Excel, Matplotlib, Seaborn, Google Sheets</p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('business')">
+                    <h3>International Business Strategy</h3>
+                    <div class="interest-details" id="business">
+                        <p><strong>Expertise:</strong> Competitive Advantage, Porter's Five Forces, Differentiation,
+                            Diversification</p>
+                        <p><strong>Analysis:</strong> Cross-Border Operations, Global Markets, Competitive Strategies
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interest-card" onclick="toggleDetails('marketing')">
+                    <h3>Marketing Analytics & Growth</h3>
+                    <div class="interest-details" id="marketing">
+                        <p><strong>Project:</strong> Behavioural Analytics & Growth Strategy for Health-Tech App using
+                            Hooked Model, CLV</p>
+                        <p><strong>Skills:</strong> Marketing Analytics, Ad Attribution, CPI/CTR Performance, HR
+                            Analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS to your existing <style> section -->
+    <style>
+        /* Areas of Interest Styles */
+        #interests {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            text-align: center;
+        }
+
+        #interests h2 {
+            font-size: 2.8rem;
+            color: #1a365d;
+            margin-bottom: 60px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        #interests h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #2b6cb0, #4299e1);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .interests-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .interests-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .interest-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-left: 4px solid #2b6cb0;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-left-color: #4299e1;
+        }
+
+        .interest-card h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.3rem;
+            color: #1a365d;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .interest-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            opacity: 0;
+            margin-top: 20px;
+        }
+
+        .interest-details.active {
+            max-height: 250px;
+            opacity: 1;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .interest-details p {
+            margin: 12px 0;
+            font-size: 0.95rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .interest-details strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .interests-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .interests-column {
+                gap: 25px;
+            }
+
+            #interests {
+                padding: 60px 15px;
+            }
+
+            #interests h2 {
+                font-size: 2.2rem;
+            }
+
+            .interest-card {
+                padding: 25px 20px;
+            }
+
+            .interest-card h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .interests-column {
+                gap: 20px;
+            }
+
+            .interest-details p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <!-- Add this JavaScript before closing </body> tag -->
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            const allDetails = document.querySelectorAll('.interest-details');
+
+            // Close all other details first
+            allDetails.forEach(detail => {
+                if (detail.id !== id) {
+                    detail.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked one
+            details.classList.toggle('active');
+        }
+    </script>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-date">
+                    <h4>August 2025 - Present</h4>
+                    <p>Liverpool, UK</p>
+                </div>
+                <div class="experience-content">
+                    <h3>OET Interlocutor</h3>
+                    <div class="company">LILA Liverpool</div>
+                    <ul>
+                        <li>Currently working as an OET (Occupational English Test) Interlocutor, conducting speaking
+                            assessments for healthcare professionals</li>
+                        <li>Facilitating standardized English language proficiency evaluations for medical practitioners
+                            seeking to work in English-speaking healthcare environments</li>
+                        <li>Ensuring fair and consistent assessment delivery while maintaining high professional
+                            standards in language testing</li>
+                        <li>Contributing to the international healthcare workforce by evaluating candidates'
+                            communication skills in medical contexts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-date">
+                    <h4>May 2025 - July 2025</h4>
+                    <p>London, UK</p>
+                </div>
+                <div class="experience-content">
+                    <h3>Behavioural Analyst</h3>
+                    <div class="company">MoovBuddy Ltd</div>
+                    <ul>
+                        <li>Conducted comprehensive Business Analytics research project analyzing user behavior and
+                            marketing performance for the Kegel Men application</li>
+                        <li>Applied advanced quantitative methods including funnel analysis, retention cohort analysis,
+                            and RFM segmentation using Amplitude and Facebook Ads Manager data</li>
+                        <li>Developed interactive dashboards in Excel, Power BI, and Google Sheets to visualize user
+                            journeys, churn, and retention patterns</li>
+                        <li>Delivered data-driven recommendations that informed UX/UI improvements, retargeting
+                            strategies, and pricing model adjustments, enhancing user retention and lifetime value</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-date">
+                    <h4>Dec 2021 - March 2023</h4>
+                    <p>Kolkata, India</p>
+                </div>
+                <div class="experience-content">
+                    <h3>Data Analyst</h3>
+                    <div class="company">Indothai Kolkata Pvt Ltd</div>
+                    <ul>
+                        <li>Engineered robust operational data management protocols, significantly enhancing accuracy
+                            and reliability of boarding, check-in, and load & trim records</li>
+                        <li>Conducted comprehensive passenger and transaction data analysis to identify discrepancies in
+                            flight manifests, baggage records, and weight balance data</li>
+                        <li>Collaborated cross-functionally with ground staff, operations control, and customer service
+                            teams to deliver actionable insights</li>
+                        <li>Implemented data quality improvement processes by troubleshooting operational integrity
+                            issues in customer handling and flight documentation workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Research Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Behavioral Analytics & Growth Strategy for Health-Tech App</h3>
+                    <div class="project-date">May 2025 – Aug 2025</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tools">
+                        <span class="tool-tag">Hooked Model</span>
+                        <span class="tool-tag">CLV</span>
+                        <span class="tool-tag">Funnel Analysis</span>
+                        <span class="tool-tag">RFM Segmentation</span>
+                        <span class="tool-tag">Cohort Analysis</span>
+                        <span class="tool-tag">Marketing Analytics</span>
+                    </div>
+                    <ul class="project-achievements">
+                        <li>Bridged theory with practice by applying behavioral frameworks such as the Hooked Model and
+                            Customer Lifetime Value (CLV) to real-world user data</li>
+                        <li>Applied advanced analytical methods to uncover behavioral drop-off points and monetization
+                            patterns</li>
+                        <li>Delivered industry-relevant impact by integrating marketing analytics with user behavior
+                            insights for retention and revenue optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-plane"></i>
+                    <h3>AI-Powered Flight Landing Decision System</h3>
+                    <div class="project-date">March 2025 – May 2025</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tools">
+                        <span class="tool-tag">GaussianCopulaSynthesizer</span>
+                        <span class="tool-tag">KMeans</span>
+                        <span class="tool-tag">RandomForestClassifier</span>
+                        <span class="tool-tag">OpenWeatherMap API</span>
+                    </div>
+                    <ul class="project-achievements">
+                        <li>Developed system modeling flight landing decisions (Land, Go Around, Divert) using real-time
+                            and simulated data</li>
+                        <li>Employed unsupervised KMeans clustering to transform unlabeled data into supervised
+                            classification problem</li>
+                        <li>Achieved 96.24% accuracy using RandomForestClassifier, identifying key influencing factors
+                        </li>
+                        <li>Enhanced aviation safety, reduced fuel costs, and improved operational efficiency</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-database"></i>
+                    <h3>Comprehensive Database Management System</h3>
+                    <div class="project-date">Sept 2024 – Nov 2024</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tools">
+                        <span class="tool-tag">E-R Model</span>
+                        <span class="tool-tag">SQL</span>
+                        <span class="tool-tag">CRUD Operations</span>
+                    </div>
+                    <ul class="project-achievements">
+                        <li>Designed comprehensive database management system for Autobest Emporio Ltd</li>
+                        <li>Employed robust methodology including E-R diagramming and SQL CREATE statements</li>
+                        <li>Built tailored user interfaces for Administration, Managers, HR, Suppliers, and Customers
+                        </li>
+                        <li>Enhanced operational efficiency and supported data-driven decision-making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <h2>Academic Background</h2>
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <h3>MSc Business Analytics and International Business</h3>
+                    <div class="university">University of Dundee</div>
+                </div>
+                <div class="education-date">
+                    Sept 2024 – Sept 2025<br>
+                    Dundee, United Kingdom
+                </div>
+            </div>
+            <div class="education-details">
+                <ul>
+                    <li><strong>Data Science & Analytics Foundation:</strong> Expertise in Database Management (ER
+                        Modeling, Normalization, Relational Algebra, SQL) and advanced Statistical Methods</li>
+                    <li><strong>Machine Learning Applications:</strong> Linear Regression, Decision Tree, Random Forest,
+                        Naive Bayes, XGBoost for predictive analysis</li>
+                    <li><strong>FinTech & Blockchain Knowledge:</strong> AI in Financial Technology, Digital Identity,
+                        Cloud Computing, Open Banking, and Digital Payments</li>
+                    <li><strong>Strategic Business Acumen:</strong> International Business Strategies, Global Finance,
+                        Cross-Border Operations analysis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <h3>Bachelor of Engineering in Electrical Engineering</h3>
+                    <div class="university">Rashtrasant Tukdoji Maharaj Nagpur University</div>
+                </div>
+                <div class="education-date">
+                    Jun 2015 – Jun 2019<br>
+                    Nagpur, India<br>
+                    <strong>GPA: 7.70/10</strong>
+                </div>
+            </div>
+            <div class="education-details">
+                <ul>
+                    <li>Built strong foundation in quantitative analysis, problem-solving, and technical reasoning</li>
+                    <li>Applied statistical methods, circuit simulation, and mathematical modeling to complex
+                        engineering challenges</li>
+                    <li>Specialized in electrical measurement, network analysis, electronic devices, microprocessors,
+                        and power systems</li>
+                    <li>Developed analytical thinking and systematic research skills essential for data handling and
+                        technical communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Information</h2>
+        <div class="contact-content">
+            <div class="contact-header">
+                <h3>Let's collaborate on data-driven research!</h3>
+                <p>I'm always interested in discussing research opportunities, collaborations, and innovative projects
+                    in data analytics and machine learning.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:shwetasarkar.official@gmail.com">shwetasarkar.official@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+447312129874">+44 7312129874</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Liverpool, Merseyside, United Kingdom</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/shwetapooja/"
+                                target="_blank">linkedin.com/in/shwetapooja</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Shweta-Portfolio" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/shwetapooja" target="_blank"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+        </div>
+        <p>&copy; 2025 Shweta Debjit Sarkar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for navbar links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - document.querySelector('.navbar').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
