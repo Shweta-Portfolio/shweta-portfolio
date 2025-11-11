@@ -35,27 +35,6 @@ MSc graduate in Business Analytics & International Business with expertise in an
 
 ---
 
-## GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=2E9EF7&icon_color=2E9EF7&text_color=C9D1D9" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=github-dark-blue&hide_border=true&background=0D1117&ring=2E9EF7&fire=2E9EF7&currStreakLabel=2E9EF7" alt="GitHub Streak" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=2E9EF7&text_color=C9D1D9" alt="Top Languages" />
-</p>
-
----
-
-## Contribution Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yourusername&theme=github-compact&hide_border=true&bg_color=0D1117&color=2E9EF7&line=2E9EF7&point=FFFFFF&area=true&area_color=2E9EF7" alt="Contribution Graph" />
-</p>
-
----
-
 ## Connect
 
 <p align="center">
@@ -73,5 +52,5 @@ MSc graduate in Business Analytics & International Business with expertise in an
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20Views&color=2E9EF7&style=flat" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Shweta-Portfolio&label=Profile%20Views&color=2E9EF7&style=flat" alt="Profile views" />
 </p>
