@@ -1,5 +1,5 @@
 <h1 align="center">Shweta Debjit Sarkar</h1>
-<h3 align="center"> Independent Researcher | Data Analyst | Machine Learning Engineer | Business Analytics Graduate</h3>
+<h3 align="center"> Independent ML Researcher | Data Scientist | Machine Learning Engineer | Business Analytics Graduate</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=MSc+Business+Analytics+Graduate;Specializing+in+Data+Analysis+%26+ML;SQL+%7C+Python+%7C+Power+BI;Transforming+Data+into+Strategic+Insights" alt="Typing SVG" />
