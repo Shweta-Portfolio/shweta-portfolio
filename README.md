@@ -9,7 +9,15 @@
 
 ## About Me
 
-MSc graduate in Business Analytics & International Business with expertise in analyzing processes, gathering requirements, and translating data into actionable insights. Skilled in building predictive models and creating data-driven solutions that support business decision-making.
+Data Scientist and ML Researcher focused on building interpretable, responsible AI for real-world impact. MSc Business Analytics & International Business (University of Dundee). Four peer-reviewed preprints in clinical and health informatics. Currently building a deep learning portfolio spanning computer vision and NLP.
+
+## What I work on:
+
+- Interpretable ML — SHAP, Grad-CAM, explainability pipelines
+- Computer Vision — transfer learning, wildlife detection, ResNet
+- NLP & Ethical AI — bias detection, text analysis at scale
+- Predictive Analytics — clinical risk stratification, churn modelling, survival analysis
+- Research — 4 DOI-indexed preprints on Zenodo
 
 **Core Competencies:**
 - Data Analysis & Visualization
