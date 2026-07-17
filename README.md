@@ -2,7 +2,7 @@
 <h3 align="center"> Independent ML Researcher | Data Scientist | Machine Learning Engineer | Business Analytics Graduate</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Data+Scientist+ML+Researcher;Specializing+in+Data+Science+%26+ML;+NLP+LLM+Neural+Network+SQL+%7C+Python+%7C+Power+BI;Transforming+Data+into+Strategic+Insights" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Data+Scientist+ML+Researcher;Specializing+in+Data+Science+%26+ML;+%NLP+%7CLLM+%7CNeural+Network+%7CSQL+%7C+Python+%7C+Power+BI;Transforming+Data+into+Strategic+Insights" alt="Typing SVG" />
 </p>
 
 ---
