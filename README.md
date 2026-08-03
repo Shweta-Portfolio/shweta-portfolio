@@ -9,22 +9,24 @@
 
 ## About Me
 
-Data Scientist and ML Researcher focused on building interpretable, responsible AI for real-world impact. MSc Business Analytics & International Business (University of Dundee). Four peer-reviewed preprints in clinical and health informatics. Currently building a deep learning portfolio spanning computer vision and NLP.
+Data Scientist and ML Researcher focused on building interpretable, responsible AI for real world impact. MSc Business Analytics & International Business (University of Dundee). Four peer reviewed preprints in clinical and health informatics. Currently building a research portfolio in causal ML for climate prediction, alongside deep learning projects spanning computer vision and NLP.
 
 ## What I work on:
 
+- Causal ML for Climate — PCMCI causal discovery, trend break detection, and causally informed Arctic sea ice prediction
 - Interpretable ML — SHAP, Grad-CAM, explainability pipelines
-- Computer Vision — transfer learning, wildlife detection, ResNet
-- NLP & Ethical AI — bias detection, text analysis at scale
-- Predictive Analytics — clinical risk stratification, churn modelling, survival analysis
-- Research — 4 DOI-indexed preprints on Zenodo
+- Computer Vision — transfer learning, satellite wildfire classification, coral reef health classification, skin lesion classification (CNN)
+- NLP & Ethical AI — sentiment analysis (RNN), bias detection, text analysis at scale
+- Clinical & Predictive AI — clinical RAG for Parkinson's, clinical risk stratification, churn modelling, survival analysis
+- Research — 4 DOI indexed preprints on Zenodo
 
 **Core Competencies:**
 - Data Analysis & Visualization
-- Machine Learning & Predictive Modeling
+- Machine Learning & Predictive Modelling
+- Causal Inference & Explainable AI
 - Business Intelligence & Dashboard Development
 - Process Optimization & Workflow Mapping
-- Cross-functional Collaboration
+- Cross functional Collaboration
 
 ---
 
