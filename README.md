@@ -5,28 +5,28 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Data+Scientist+ML+Researcher;Specializing+in+Data+Science+%26+ML;+NLP+LLM+Neural+Network+SQL+Python+Power+BI;Transforming+Data+into+Strategic+Insights" alt="Typing SVG" />
 </p>
 
----
-
+--- 
 ## About Me
 
-Data Scientist and ML Researcher focused on building interpretable, responsible AI for real world impact. MSc Business Analytics & International Business (University of Dundee). Four peer reviewed preprints in clinical and health informatics. Currently building a research portfolio in causal ML for climate prediction, alongside deep learning projects spanning computer vision and NLP.
+Data Scientist and ML Researcher focused on building interpretable, responsible AI for real world impact. MSc Business Analytics and International Business, University of Dundee. Four peer reviewed preprints in clinical and health informatics. Currently building a research portfolio in causal ML for climate prediction, alongside deep learning projects spanning computer vision and NLP.
 
-## What I work on:
+## What I Work On
 
-- Causal ML for Climate — PCMCI causal discovery, trend break detection, and causally informed Arctic sea ice prediction
-- Interpretable ML — SHAP, Grad-CAM, explainability pipelines
-- Computer Vision — transfer learning, satellite wildfire classification, coral reef health classification, skin lesion classification (CNN)
-- NLP & Ethical AI — sentiment analysis (RNN), bias detection, text analysis at scale
-- Clinical & Predictive AI — clinical RAG for Parkinson's, clinical risk stratification, churn modelling, survival analysis
-- Research — 4 DOI indexed preprints on Zenodo
+- Causal ML for Climate: PCMCI causal discovery, trend break detection, and causally informed Arctic sea ice prediction
+- Interpretable ML: SHAP, Grad CAM, explainability pipelines
+- Computer Vision: transfer learning, satellite wildfire classification, coral reef health classification, skin lesion classification with CNNs
+- NLP and Ethical AI: sentiment analysis with RNNs, bias detection, text analysis at scale
+- Clinical and Predictive AI: clinical RAG for Parkinson's, clinical risk stratification, churn modelling, survival analysis
+- Research: four DOI indexed preprints on Zenodo
 
-**Core Competencies:**
-- Data Analysis & Visualization
-- Machine Learning & Predictive Modelling
-- Causal Inference & Explainable AI
-- Business Intelligence & Dashboard Development
-- Process Optimization & Workflow Mapping
-- Cross functional Collaboration
+**Core Competencies**
+
+- Data Analysis and Visualization
+- Machine Learning and Predictive Modelling
+- Causal Inference and Explainable AI
+- Business Intelligence and Dashboard Development
+- Process Optimization and Workflow Mapping
+- Cross Functional Collaboration
 
 ---
 
@@ -42,8 +42,6 @@ Data Scientist and ML Researcher focused on building interpretable, responsible 
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="45" height="45"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="excel" width="45" height="45"/>
 </p>
-
----
 
 ## Connect
 
